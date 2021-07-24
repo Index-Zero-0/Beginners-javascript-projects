@@ -1,0 +1,77 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+	text-align: left;
+}
+body{
+	background-color: #ddd;
+	font-family: 'Montserrat', sans-serif;
+	-ms-overflow-style: none;  /* IE and Edge */
+  	scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+  }
+
+nav{
+	display:flex;
+	align-items:center;
+	width: 100%;
+	height: 80px;
+	padding: 0 25px;
+	background-color: #ffffff;
+
+}
+
+nav > form{
+	padding: 20px;
+}
+
+form input, form select{
+	margin-right:20px;
+	font-size: 1rem;
+	border: rgb(177, 177, 177) solid 1px;
+	cursor:default;
+	vertical-align:middle;
+}
+
+#selectedFontSize{
+	font-size: 1rem;
+	padding: 0px 5px;
+}
+
+.fontContainer select:focus{
+	outline:none;
+}
+
+nav a{
+	color: #333;
+	border:none;
+	border-radius: 2px;
+	font-size: 1rem;
+	padding: 5px 8px;
+}
+
+nav a:hover{
+	background-color:#ddd;
+}
+
+
+main #textEditor{
+	width: 60%;
+	min-height: 90vh;
+	background-color:#fff;
+	padding: 5%;
+	font-size: 14px;
+	margin: 50px auto;
+	line-height:1.5;
+	font-weight: 400;
+}
+
+
+
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/style.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+	<title>Wheather prognosis</title>
+</head>
+
+<body>
+	<main>
+		<section class="section-1">
+			<h1 class="cityName">London</h1>
+			<div class="weather-symbol">
+				<img src="Images/clouds.png" alt="weathers symbol">
+				<div>
+					<h6>Cloudy</h6>
+					<h4 class="Temperature">25<span>&#8451;</span> </h4>
+				</div>
+			</div>
+			<ul class="weatherInfo">
+				<li>
+					<p class="time"><span class="day">Friday</span> 15:00</p>
+				</li>
+				<li>
+					<p>Wind speed: <span>15 m/s</span></p>
+				</li>
+			</ul>
+		</section>
+		<section class="section-2">
+			<form class="searchBox">
+				<input type="text" name="query" placeholder="Search city" value="London">
+				<button type="submit"><i class="fas fa-search"></i><span>Search</span></button>
+			</form>
+		</section>
+	</main>
+	<script src="JS/index.js"></script>
+</body>
+
+</html>

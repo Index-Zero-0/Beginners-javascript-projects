@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/style.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"
+		referrerpolicy="no-referrer" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"
+		integrity="sha512-U5C477Z8VvmbYAoV4HDq17tf4wG6HXPC6/KM9+0/wEXQQ13gmKY2Zb0Z2vu0VNUWch4GlJ+Tl/dfoLOH4i2msw==" crossorigin="anonymous"
+		referrerpolicy="no-referrer"></script>
+	<title>PDF Viewer</title>
+</head>
+
+<body>
+	<main>
+		<h3>Open a PDF file</h3>
+		<canvas class="pdf-viewer hidden">
+
+		</canvas>
+	</main>
+	<footer>
+		<ul>
+			<li>
+				<button id="openPDF">
+					<span>Open</span> <i class="fas fa-folder-open"></i>
+				</button>
+				<input type="file" id="inputFile" hidden>
+			</li>
+			<li class="pagination">
+				<button id="previous"><i class="fas fa-arrow-alt-circle-left"></i></button>
+				<span id="current_page">0 of 0</span>
+				<button id="next"><i class="fas fa-arrow-alt-circle-right"></i></button>
+			</li>
+
+			<li>
+				<span id="zoomValue">150%</span>
+				<input type="range" id="zoom" name="cowbell" min="100" max="300" value="150" step="50" disabled>
+			</li>
+		</ul>
+	</footer>
+	<script type="text/javascript" src="JS/index.js"></script>
+</body>
+
+</html>

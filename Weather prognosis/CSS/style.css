@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	font-family: 'Lato', sans-serif;
+	background-image: linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../Images/background.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+main{
+	width: 100%;
+	height: 100%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position:relative;
+}
+
+.section-1{
+	margin-top: 5%;
+	width:380px;
+	height:430px;
+	background-color: rgba(255, 255, 255,0.6);
+	border-radius: 5px;
+	text-align: center;
+	color: #2c2c2c;
+}
+
+.cityName{
+	border-bottom: rgba(122, 61, 179,0.5) 2px solid;
+	width: 80%;
+	margin: auto;
+	padding: 40px 0 20px;
+}
+
+.weather-symbol{
+	width: 100%;
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content:center;
+}
+
+.weather-symbol img{
+	width:100px;
+}
+
+.weather-symbol h6{
+	padding: 5px;
+	font-size: 1rem;
+	color: #464646;
+}
+
+.weatherInfo{
+	margin-top:40px;
+	list-style-type: none;
+}
+
+.weatherInfo li{
+	color: #222222;
+	line-height: 1.7;
+}
+
+.time{
+	color: #9542e2;
+	font-weight: 700;
+}
+
+.Temperature{
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.section-2{
+	margin-top: 10%;
+	width: 100%;
+	color: #2c2c2c;
+}
+
+.section-2 > .searchBox{
+	width: 60%;
+	margin: auto;
+	position: relative;
+}
+
+.searchBox > input{
+	width: 100%;
+	line-height:1.7;
+	padding: 10px 20px;
+	border:none;
+	outline: none;
+	border-radius: 30px;
+	font-size: 1rem;
+}
+
+.searchBox > input:focus{
+	box-shadow: 0 0 2px 2px #9542e2;
+}
+
+.searchBox > button{
+	position: absolute;
+	right: -1px;
+	line-height:1.7;
+	outline: none;
+	border:none;
+	border-radius: 0 30px 30px 0;
+	padding: 0 20px;
+	height:100%;
+	background-color:#9542e2;
+	color: #fff;
+	text-align:center;
+	font-size: 0.9rem;
+	cursor: pointer;
+}
+
+.searchBox i{
+	font-size:1.1rem;
+	padding-right: 5px;
+	transition: transform 0.5s;
+	
+}
+
+.searchBox > button:hover i{
+	transform: rotate(20deg);
+}
+
+@media only screen and (max-width: 750px){
+	.section-1{
+		width:300px;
+	}
+
+	.searchBox span{
+		display:none;
+	}
+	.section-2 > .searchBox{
+		width: 80%;
+	}
+}

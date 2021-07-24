@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="CSS/style.css" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"
+		referrerpolicy="no-referrer" />
+	<title>Document</title>
+</head>
+
+<body>
+	<nav>
+		<div>
+			<a href="javascript:void(0)" data-value="bold"><i class="fas fa-bold"></i></a>
+			<a href="javascript:void(0)" data-value="italic"><i class="fas fa-italic"></i></a>
+			<a href="javascript:void(0)" data-value="underline"><i class="fas fa-underline"></i></a>
+		</div>
+		<form id="navForm" autocomplete="off">
+			<select name="text-align" class="align-options fas fa-align-left">
+				<option class="fas fa-align-left" value="justifyLeft" selected>&#xf036;</option>
+				<option class="fas fa-align-center" value="justifyCenter">&#xf037;</option>
+				<option class="fas fa-align-right" value="justifyRight">&#xf038;</option>
+			</select>
+			<select name="fontSelect" id="selectedFontSize">
+				<option value="2" selected>Normal</option>
+				<option value="3">Title</option>
+				<option value="4">Subtitle</option>
+				<option value="5">Heading 1</option>
+				<option value="6">Heading 2</option>
+				<option value="7">Heading 3</option>
+			</select>
+		</form>
+	</nav>
+	<main>
+		<div id="textEditor" contenteditable="true">
+
+		</div>
+		<!-- <form class="textEditor">
+			<textarea type="text"></textarea>
+		</form> -->
+	</main>
+	<script src="JS/index.js"></script>
+</body>
+
+</html>

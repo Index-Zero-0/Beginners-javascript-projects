@@ -1,5 +1,5 @@
 # Beginners-javascript-projects
-
+Some javascript projects that you can build as beginners.
 
 
 ## API key for Weather prognosis app:

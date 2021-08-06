@@ -3,21 +3,23 @@ const input = document.getElementById('inputFile');
 const openFile = document.getElementById('openPDF');
 const currentPage = document.getElementById('current_page');
 const viewer = document.querySelector('.pdf-viewer');
-const pagination = document.querySelector('.pagination');
+let currentPDF = {}
 
-const currentPDF = {
-	file: null,
-	countOfPages: 0,
-	currentPage: 1,
-	zoom: 1.5
+function resetCurrentPDF() {
+	currentPDF = {
+		file: null,
+		countOfPages: 0,
+		currentPage: 1,
+		zoom: 1.5
+	}
 }
 
 
 openFile.addEventListener('click', () => {
-	inputFile.click();
+	input.click();
 });
 
-input.addEventListener('change', (event) => {
+input.addEventListener('change', event => {
 	const inputFile = event.target.files[0];
 	if (inputFile.type == 'application/pdf') {
 		const reader = new FileReader();
@@ -58,8 +60,9 @@ document.getElementById('previous').addEventListener('click', () => {
 	}
 });
 
-async function loadPDF(data) {
+function loadPDF(data) {
 	const pdfFile = pdfjsLib.getDocument(data);
+	resetCurrentPDF();
 	pdfFile.promise.then((doc) => {
 		currentPDF.file = doc;
 		currentPDF.countOfPages = doc.numPages;

@@ -39,7 +39,6 @@ zoomButton.addEventListener('input', () => {
 	if (currentPDF.file) {
 		document.getElementById('zoomValue').innerHTML = zoomButton.value + "%";
 		currentPDF.zoom = parseInt(zoomButton.value) / 100;
-		console.log(currentPDF.zoom)
 		renderCurrentPage();
 	}
 });
